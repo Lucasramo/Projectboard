@@ -1,0 +1,34 @@
+<head>
+    <title>My Project</title>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a style="color: #807b7b;
+                font-weight: 600;" href="" class="navbar-brand"> Discussion board </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    {{#if currentUser}}
+                    {{> loginButtons}}
+                    {{else}}
+                    {{/if}}
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- If the user is logged in -->
+        {{#if currentUser}}
+        {{> forum}}
+        {{else}}
+        <div id="login-screen">
+            {{> loginButtons}}
+        </div>
+        {{/if}}
+
+    </main>
+</body>

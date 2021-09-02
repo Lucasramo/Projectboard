@@ -1,0 +1,35 @@
+<template name="forum">
+    <div class="">
+        <div class="">
+            <div class="card-text">
+                <form>
+                    <div class="form-group">
+                        <label style="color: gray;" for="exampleInputEmail1">Add your comment here:</label>
+                        <textarea type="text" class="form-control text-custom" id="text_description"></textarea>
+                    </div>
+                    <div class="form-group  ">
+                        <button class="btn btn-primary" id="btnform">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form-group card">
+                {{#each forms}}
+                
+                <div>
+                    <div style="margin-bottom: 15px;">
+                        <h5>{{userLog}}</h5>
+                        <small>{{date}}</small>
+                    </div>
+                    <div>
+                        <p>{{description}}</p>
+                    </div>
+                    <div style="text-align: end;">
+                        <button class="btnRemove" id="remove">Remove</button>
+                    </div>
+                    <hr>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</template>

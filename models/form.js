@@ -1,0 +1,1 @@
+Form = new Mongo.Collection("form");

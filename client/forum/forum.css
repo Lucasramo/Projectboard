@@ -1,0 +1,59 @@
+.text-custom{
+    width: 100% !important;
+}
+.container{
+    width: 55% !important;
+}
+body{
+    background: #e0e0e0;
+}
+.navbar-default{
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+.card{
+    background: white;
+    margin-top: 30px;
+    padding: 15px;
+    box-shadow: 0px 1px 4px grey;
+    border-radius: 4px 4px 4px 4px;
+
+}
+.card-text{
+    background: white;
+    padding: 20px;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 1px 4px grey;
+}
+h5{
+    font-weight: bold;
+    margin-bottom: 0px !important;
+}
+.btnRemove{
+    padding: 3px;
+    background: transparent;
+    border-color: transparent;
+    color: red;
+}
+#login-screen .dropdown-menu {
+    display: block;
+    position: relative;
+    height: 245px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+  
+  #login-screen #login-dropdown-list {
+    display: block;
+  }
+  
+  /* Hides the toggle that you click on */
+  
+  #login-screen a.dropdown-toggle {
+    display: none;
+  }
+  #login-passord{
+    margin-top: 14px !important;
+    border-radius: 1px 1px 1px 1px !important;
+  }
